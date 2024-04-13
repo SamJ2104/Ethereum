@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereum</title>
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+<body>
+    <iframe  id="logged-in"src="logged-in.html" style="display:none;"></iframe>
+<div id="signin">
+    <div id="login">
+    <h1>Sign-In to Ethereum</h1>
+    <input placeholder="Ethereum ID" value="SamJ2104">
+    <br><br>
+    <input placeholder="Authentication Token" value="SGVsbG8gdGhlcmUgbXkgbmFtZSBpcyBzYW0gbG9sIGkgbGlrZSB0dXJ0bGVz">
+    <br><br>
+    <button type="submit" id="loginbtn">Login</button>
+    </div>
+</div>
+    <script>
+        document.getElementById("loginbtn").onclick = function(){
+            document.getElementById("logged-in").style.display = "block";
+            document.getElementById("signin").style.display = "none";
+        }
+    </script>
+</body>
+</html>

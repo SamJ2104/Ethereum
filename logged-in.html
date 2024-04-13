@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="namebox">
+    <a style="font-size:34px":>SamJ2104</a> <br>
+    Ethereum
+    </div>
+    Balance: 1.293 ETH
+    
+    <div id="options">
+    <button class="optionbtns">Buy</button>
+    <button class="optionbtns">Sell</button>
+    <button class="optionbtns" id="mine">Mine</button>
+    <br>
+    <br>
+    <br>
+    <div id="mining">
+        <p id="miningtext"></p>
+        <p id="n1"></p>
+        <p id="n2"></p>
+        <p id="n3"></p>
+        <p id="n4"></p>
+        <p id="n5"></p>
+        <p id="charged"></p>
+    </div>
+    </div>
+
+<script>
+    const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+    const minefunc = async () => {    
+    await sleep(500)
+    document.getElementById("miningtext").textContent = "Mining...";
+    await sleep(3000)
+    document.getElementById("n1").textContent = "+ £2.87";
+    await sleep(3600)
+    document.getElementById("n2").textContent = "+ £8.92";
+    await sleep(4200)
+    document.getElementById("n3").textContent = "+ £23.87";
+    await sleep(2200)
+    document.getElementById("n4").textContent = "+ £1.87";
+    await sleep(2300)
+    document.getElementById("n1").textContent = "+ £4.98";
+    document.getElementById("n1").style.color = "rgb(255, 137, 0)"
+    await sleep(3600)
+    document.getElementById("n2").textContent = "+ £10.23";
+    document.getElementById("n2").style.color = "rgb(255, 187, 0)"
+    await sleep(4200)
+    document.getElementById("n3").textContent = "+ £48.83";
+    document.getElementById("n3").style.color = "rgb(0, 255, 238)"
+    await sleep(2200)
+    document.getElementById("n4").textContent = "+ £2.38";
+    document.getElementById("n4").style.color = "rgb(255, 17, 0)"
+    await sleep(2300)
+    document.getElementById("n1").textContent = "+ £7.89";
+    document.getElementById("n1").style.color = "rgb(255, 134, 0)"
+    await sleep(3600)
+    document.getElementById("n2").textContent = "+ £87.53";
+    document.getElementById("n2").style.color = "rgb(4, 0, 255)"
+    await sleep(4200)
+    document.getElementById("n3").textContent = "+ £148.27";
+    document.getElementById("n3").style.color = "rgb(128, 0, 255)"
+    await sleep(1200)
+    document.getElementById("n4").textContent = "+ £132.92";
+    document.getElementById("n4").style.color = "rgb(93, 0, 255)"
+    await sleep(2300)
+    document.getElementById("charged").textContent = "Checks Complete, Running in Background";
+}
+
+
+    document.getElementById("mine").onclick = function(){
+    minefunc()
+}
+</script>
+</body>
+</html>

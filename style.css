@@ -1,0 +1,65 @@
+#login {
+    text-align: center;
+    transform: translate(0%, 25%);
+
+}
+body{
+    background-color: rgb(10, 11, 13);
+    color:#EAECEF;
+    font-family: "Lato";
+    text-align: center;
+    transform: translate(0%, 100px);
+}
+#loginbtn{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #232423;
+    padding: 0.3em 1.2em;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #EAECEF;
+    background-size: 100% 100%;
+    box-shadow: 0 0 0 4px #232423 inset;
+    font-family: "lato";
+}
+#options{
+    transform: translate(0%, 150px);
+}
+.optionbtns{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #232423;
+    padding: 0.3em 1.2em;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #EAECEF;
+    background-size: 100% 100%;
+    box-shadow: 0 0 0 4px #232423 inset;
+    font-family: "lato";
+}
+#logged-in{
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+#n1 {
+    color: rgb(255, 38, 0);
+}
+#n2 {
+    color: rgb(255, 72, 0);
+}
+#n3{
+    color: chartreuse;
+}
+#n4{
+    color: rgb(255, 38, 0);
+}
